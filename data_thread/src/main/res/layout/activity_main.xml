@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="169dp"
+        tools:layout_editor_absoluteY="397dp">
+
+        <TextView
+            android:id="@+id/Bruh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="runOnUiThread является методом класса Activity и используется для выполнения операций в главном потоке пользовательского интерфейса. Он принимает объект Runnable в качестве параметра и запускает этот объект в главном потоке. Это может быть полезно, когда нужно обновить пользовательский интерфейс после выполнения длительной операции в фоновом потоке.
+
+postDelayed - это метод класса Handler, который позволяет запустить Runnable объект через определенный период времени в главном потоке. Он принимает Runnable объект и задержку времени в миллисекундах в качестве параметров. Этот метод может быть полезен, когда нужно запустить задачу через определенный период времени в главном потоке.
+
+post - это также метод класса Handler, который позволяет запустить Runnable объект в главном потоке. Он принимает Runnable объект в качестве параметра и добавляет его в очередь сообщений для выполнения в главном потоке. Этот метод может быть полезен, когда нужно выполнить некоторую задачу в главном потоке из фонового потока.
+
+Различия между этими методами заключаются в том, как они используются для запуска задач в главном потоке. runOnUiThread используется для выполнения операций в главном потоке, когда вызывающий поток уже работает в главном потоке. postDelayed позволяет запустить Runnable объект через определенный период времени, а post просто добавляет объект в очередь для выполнения в главном потоке. Кроме того, postDelayed позволяет задавать задержку времени перед выполнением задачи, а runOnUiThread и post выполняются сразу же." />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
